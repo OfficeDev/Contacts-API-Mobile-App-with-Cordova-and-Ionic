@@ -1,0 +1,35 @@
+﻿<ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-dark">
+        <button class="button button-clear" ng-click="cancel()">Cancel</button>
+        <h1 class="title">Contact</h1>
+        <button class="button button-clear" ng-click="save()">Save</button>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list">
+            <div class="item item-divider">
+                <b>First Name:</b>
+            </div>
+            <label class="item item-input">
+                <input type="text" placeholder="enter first name" ng-model="contact.GivenName">
+            </label>
+            <div class="item item-divider">
+                <b>Last Name:</b>
+            </div>
+            <label class="item item-input">
+                <input type="text" placeholder="enter last name" ng-model="contact.Surname">
+            </label>
+            <div class="item item-divider">
+                <b>Email:</b>
+            </div>
+            <label class="item item-input">
+                <input type="text" placeholder="enter email address" ng-model="contact.EmailAddresses[0].Address">
+            </label>
+            <div class="item item-divider">
+                <b>Job Title:</b>
+            </div>
+            <label class="item item-input">
+                <input type="text" placeholder="enter job title" ng-model="contact.JobTitle">
+            </label>
+        </div>
+    </ion-content>
+</ion-modal-view>

@@ -1,0 +1,24 @@
+﻿<ion-view view-title="Home">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear icon ion-plus" ng-click="add()" ng-show="canAdd"></button>
+    </ion-nav-buttons>
+    <ion-content class="padding">
+        <ion-refresher on-refresh="refresh(true)" spinner="none"></ion-refresher>
+        <ion-list>
+            <ion-item item="item" ng-hide="contacts.length > 0">
+                No Contacts...pull to refresh
+            </ion-item>
+            <ion-item item="item" ng-repeat="contact in contacts">
+                {{contact.DisplayName}}
+
+                <!-- option buttons via slide to left -->
+                <ion-option-button class="button-positive icon ion-edit" data-ng-click="edit(contact)">
+
+                </ion-option-button>
+                <ion-option-button class="button-balanced icon ion-trash-a" data-ng-click="delete(contact)">
+
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

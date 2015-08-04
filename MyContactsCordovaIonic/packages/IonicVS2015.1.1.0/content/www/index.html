@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bar bar-header bar-assertive" ng-controller="errorCtrl" ng-show="activeError" style="z-index: 1000">
+        <h1 class="title">Error: {{error}}</h1>
+        <button class="button icon ion-close-round" ng-click="dismissError()"></button>
+    </div>
+    <ion-nav-view></ion-nav-view>
+    <div class="spinner">
+        <ion-spinner icon="android" class="spinnerSpinner"></ion-spinner>
+        <div class="spinnerBackground"></div>
+    </div>
+
+    <!-- Other Library/Framework references -->
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- Cordova references -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <!-- App references -->
+    <script src="scripts/index.js"></script>
+    <script src="app/services.js"></script>
+    <script src="app/controllers.js"></script>
+    <script src="app/app.js"></script>
+</body>
+</html>
