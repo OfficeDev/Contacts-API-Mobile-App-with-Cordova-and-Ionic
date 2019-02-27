@@ -1,3 +1,18 @@
+---
+topic: sample
+products:
+- Outlook
+- Office 365
+languages:
+- JavaScript
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 8/3/2015 12:17:12 PM
+  scenarios:
+  - Mobile
+---
 # Contacts-API-Mobile-App-with-Cordova-and-Ionic
 This repository contains a simple mobile application built using  Cordova, AngularJS, and the Ionic Framework to display contacts from Office 365.
 ## Environment Setup ##
